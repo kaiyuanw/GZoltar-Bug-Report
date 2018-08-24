@@ -1,0 +1,954 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Math 4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven-3) @ commons-math4 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ commons-math4 ---
+[INFO] 
+[INFO] --- com.gzoltar.maven:1.7.1-SNAPSHOT:prepare-agent (pre-unit-test) @ commons-math4 ---
+[INFO] argLine set to -javaagent:/home/ubuntu/.m2/repository/com/gzoltar/com.gzoltar.agent/1.7.1-SNAPSHOT/com.gzoltar.agent-1.7.1-SNAPSHOT-runtime.jar=buildlocation=/home/ubuntu/projects/commons-math/target/classes,destfile=/home/ubuntu/projects/commons-math/target/gzoltar.ser,exclclassloader=sun.reflect.DelegatingClassLoader,inclnolocationclasses=false,output=FILE
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-math4 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ commons-math4 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (default) @ commons-math4 ---
+[INFO] Executing: /bin/sh -c cd /home/ubuntu/projects/commons-math && git rev-parse --verify HEAD
+[INFO] Working directory: /home/ubuntu/projects/commons-math
+[INFO] Storing buildNumber: null at timestamp: 1535125486849
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- maven-jgit-buildnumber-plugin:1.2.10:extract-buildnumber (default) @ commons-math4 ---
+[INFO] Git info extracted, revision: '1855535', branch: 'master', tag: '', commitsCount: '1', commitDate: '2018-08-24', buildnumber: 'master.1.1855535'
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-math4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ commons-math4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 805 source files to /home/ubuntu/projects/commons-math/target/classes
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.5.3:manifest (bundle-manifest) @ commons-math4 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.13:check (checkAPIcompatibility) @ commons-math4 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-math4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 38 resources
+[INFO] Copying 0 resource to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ commons-math4 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.4.201502262128:prepare-agent (prepare-agent) @ commons-math4 ---
+[INFO] argLine set to -javaagent:/home/ubuntu/.m2/repository/org/jacoco/org.jacoco.agent/0.7.4.201502262128/org.jacoco.agent-0.7.4.201502262128-runtime.jar=destfile=/home/ubuntu/projects/commons-math/target/jacoco.exec -javaagent:/home/ubuntu/.m2/repository/com/gzoltar/com.gzoltar.agent/1.7.1-SNAPSHOT/com.gzoltar.agent-1.7.1-SNAPSHOT-runtime.jar=buildlocation=/home/ubuntu/projects/commons-math/target/classes,destfile=/home/ubuntu/projects/commons-math/target/gzoltar.ser,exclclassloader=sun.reflect.DelegatingClassLoader,inclnolocationclasses=false,output=FILE
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ commons-math4 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.commons.math4.complex.ComplexFieldTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 s - in org.apache.commons.math4.complex.ComplexFieldTest
+[INFO] Running org.apache.commons.math4.complex.QuaternionTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.328 s - in org.apache.commons.math4.complex.QuaternionTest
+[INFO] Running org.apache.commons.math4.complex.FrenchComplexFormatTest
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in org.apache.commons.math4.complex.FrenchComplexFormatTest
+[INFO] Running org.apache.commons.math4.complex.RootsOfUnityTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.commons.math4.complex.RootsOfUnityTest
+[INFO] Running org.apache.commons.math4.complex.ComplexTest
+[WARNING] Tests run: 137, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.948 s - in org.apache.commons.math4.complex.ComplexTest
+[INFO] Running org.apache.commons.math4.complex.ComplexUtilsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.complex.ComplexUtilsTest
+[INFO] Running org.apache.commons.math4.complex.ComplexFormatTest
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.commons.math4.complex.ComplexFormatTest
+[INFO] Running org.apache.commons.math4.analysis.FunctionUtilsTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.587 s - in org.apache.commons.math4.analysis.FunctionUtilsTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.RegulaFalsiSolverTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.apache.commons.math4.analysis.solvers.RegulaFalsiSolverTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.BisectionSolverTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.analysis.solvers.BisectionSolverTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.UnivariateSolverUtilsTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.apache.commons.math4.analysis.solvers.UnivariateSolverUtilsTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.LaguerreSolverTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.commons.math4.analysis.solvers.LaguerreSolverTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.NewtonRaphsonSolverTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.commons.math4.analysis.solvers.NewtonRaphsonSolverTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.PegasusSolverTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.analysis.solvers.PegasusSolverTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.BracketingNthOrderBrentSolverTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.apache.commons.math4.analysis.solvers.BracketingNthOrderBrentSolverTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.IllinoisSolverTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.analysis.solvers.IllinoisSolverTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.MullerSolverTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.analysis.solvers.MullerSolverTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.SecantSolverTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.analysis.solvers.SecantSolverTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.BrentSolverTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.analysis.solvers.BrentSolverTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.RiddersSolverTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.analysis.solvers.RiddersSolverTest
+[INFO] Running org.apache.commons.math4.analysis.solvers.MullerSolver2Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.analysis.solvers.MullerSolver2Test
+[INFO] Running org.apache.commons.math4.analysis.interpolation.NevilleInterpolatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.apache.commons.math4.analysis.interpolation.NevilleInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.UnivariatePeriodicInterpolatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.commons.math4.analysis.interpolation.UnivariatePeriodicInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.MicrosphereInterpolatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.323 s - in org.apache.commons.math4.analysis.interpolation.MicrosphereInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.DividedDifferenceInterpolatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.analysis.interpolation.DividedDifferenceInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.TricubicInterpolatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.apache.commons.math4.analysis.interpolation.TricubicInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.PiecewiseBicubicSplineInterpolatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in org.apache.commons.math4.analysis.interpolation.PiecewiseBicubicSplineInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.BicubicInterpolatingFunctionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.commons.math4.analysis.interpolation.BicubicInterpolatingFunctionTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.LinearInterpolatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.analysis.interpolation.LinearInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.PiecewiseBicubicSplineInterpolatingFunctionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.analysis.interpolation.PiecewiseBicubicSplineInterpolatingFunctionTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.HermiteInterpolatorTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in org.apache.commons.math4.analysis.interpolation.HermiteInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.TricubicInterpolatingFunctionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.59 s - in org.apache.commons.math4.analysis.interpolation.TricubicInterpolatingFunctionTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.LoessInterpolatorTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.apache.commons.math4.analysis.interpolation.LoessInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.BicubicInterpolatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.commons.math4.analysis.interpolation.BicubicInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.AkimaSplineInterpolatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.analysis.interpolation.AkimaSplineInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.SplineInterpolatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.analysis.interpolation.SplineInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.interpolation.FieldHermiteInterpolatorTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.342 s - in org.apache.commons.math4.analysis.interpolation.FieldHermiteInterpolatorTest
+[INFO] Running org.apache.commons.math4.analysis.function.LogitTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.apache.commons.math4.analysis.function.LogitTest
+[INFO] Running org.apache.commons.math4.analysis.function.SincTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in org.apache.commons.math4.analysis.function.SincTest
+[INFO] Running org.apache.commons.math4.analysis.function.SqrtTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.analysis.function.SqrtTest
+[INFO] Running org.apache.commons.math4.analysis.function.SigmoidTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.analysis.function.SigmoidTest
+[INFO] Running org.apache.commons.math4.analysis.function.HarmonicOscillatorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.commons.math4.analysis.function.HarmonicOscillatorTest
+[INFO] Running org.apache.commons.math4.analysis.function.StepFunctionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.commons.math4.analysis.function.StepFunctionTest
+[INFO] Running org.apache.commons.math4.analysis.function.LogisticTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.commons.math4.analysis.function.LogisticTest
+[INFO] Running org.apache.commons.math4.analysis.function.GaussianTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.commons.math4.analysis.function.GaussianTest
+[INFO] Running org.apache.commons.math4.analysis.differentiation.SparseGradientTest
+[INFO] Tests run: 120, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.442 s - in org.apache.commons.math4.analysis.differentiation.SparseGradientTest
+[INFO] Running org.apache.commons.math4.analysis.differentiation.DerivativeStructureTest
+[INFO] Tests run: 124, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.005 s - in org.apache.commons.math4.analysis.differentiation.DerivativeStructureTest
+[INFO] Running org.apache.commons.math4.analysis.differentiation.GradientFunctionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s - in org.apache.commons.math4.analysis.differentiation.GradientFunctionTest
+[INFO] Running org.apache.commons.math4.analysis.differentiation.FiniteDifferencesDifferentiatorTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.apache.commons.math4.analysis.differentiation.FiniteDifferencesDifferentiatorTest
+[INFO] Running org.apache.commons.math4.analysis.differentiation.JacobianFunctionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.commons.math4.analysis.differentiation.JacobianFunctionTest
+[INFO] Running org.apache.commons.math4.analysis.differentiation.DSCompilerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.commons.math4.analysis.differentiation.DSCompilerTest
+[INFO] Running org.apache.commons.math4.analysis.polynomials.PolynomialSplineFunctionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.analysis.polynomials.PolynomialSplineFunctionTest
+[INFO] Running org.apache.commons.math4.analysis.polynomials.PolynomialFunctionNewtonFormTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.analysis.polynomials.PolynomialFunctionNewtonFormTest
+[INFO] Running org.apache.commons.math4.analysis.polynomials.PolynomialFunctionLagrangeFormTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.analysis.polynomials.PolynomialFunctionLagrangeFormTest
+[INFO] Running org.apache.commons.math4.analysis.polynomials.PolynomialFunctionTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.analysis.polynomials.PolynomialFunctionTest
+[INFO] Running org.apache.commons.math4.analysis.polynomials.PolynomialsUtilsTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.451 s - in org.apache.commons.math4.analysis.polynomials.PolynomialsUtilsTest
+[INFO] Running org.apache.commons.math4.analysis.integration.MidPointIntegratorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.271 s - in org.apache.commons.math4.analysis.integration.MidPointIntegratorTest
+[INFO] Running org.apache.commons.math4.analysis.integration.SimpsonIntegratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.analysis.integration.SimpsonIntegratorTest
+[INFO] Running org.apache.commons.math4.analysis.integration.IterativeLegendreGaussIntegratorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.727 s - in org.apache.commons.math4.analysis.integration.IterativeLegendreGaussIntegratorTest
+[INFO] Running org.apache.commons.math4.analysis.integration.TrapezoidIntegratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.commons.math4.analysis.integration.TrapezoidIntegratorTest
+[INFO] Running org.apache.commons.math4.analysis.integration.gauss.HermiteParametricTest
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in org.apache.commons.math4.analysis.integration.gauss.HermiteParametricTest
+[INFO] Running org.apache.commons.math4.analysis.integration.gauss.LegendreHighPrecisionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.33 s - in org.apache.commons.math4.analysis.integration.gauss.LegendreHighPrecisionTest
+[INFO] Running org.apache.commons.math4.analysis.integration.gauss.LegendreTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.apache.commons.math4.analysis.integration.gauss.LegendreTest
+[INFO] Running org.apache.commons.math4.analysis.integration.gauss.BaseRuleFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.commons.math4.analysis.integration.gauss.BaseRuleFactoryTest
+[INFO] Running org.apache.commons.math4.analysis.integration.gauss.LegendreParametricTest
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.apache.commons.math4.analysis.integration.gauss.LegendreParametricTest
+[INFO] Running org.apache.commons.math4.analysis.integration.gauss.LegendreHighPrecisionParametricTest
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.832 s - in org.apache.commons.math4.analysis.integration.gauss.LegendreHighPrecisionParametricTest
+[INFO] Running org.apache.commons.math4.analysis.integration.gauss.GaussIntegratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.analysis.integration.gauss.GaussIntegratorTest
+[INFO] Running org.apache.commons.math4.analysis.integration.gauss.HermiteTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.analysis.integration.gauss.HermiteTest
+[INFO] Running org.apache.commons.math4.analysis.integration.RombergIntegratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.analysis.integration.RombergIntegratorTest
+[INFO] Running org.apache.commons.math4.genetics.FitnessCachingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.commons.math4.genetics.FitnessCachingTest
+[INFO] Running org.apache.commons.math4.genetics.FixedGenerationCountTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.genetics.FixedGenerationCountTest
+[INFO] Running org.apache.commons.math4.genetics.GeneticAlgorithmTestBinary
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.apache.commons.math4.genetics.GeneticAlgorithmTestBinary
+[INFO] Running org.apache.commons.math4.genetics.ChromosomeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.genetics.ChromosomeTest
+[INFO] Running org.apache.commons.math4.genetics.UniformCrossoverTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 s - in org.apache.commons.math4.genetics.UniformCrossoverTest
+[INFO] Running org.apache.commons.math4.genetics.OnePointCrossoverTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.genetics.OnePointCrossoverTest
+[INFO] Running org.apache.commons.math4.genetics.BinaryChromosomeTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.genetics.BinaryChromosomeTest
+[INFO] Running org.apache.commons.math4.genetics.ListPopulationTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.commons.math4.genetics.ListPopulationTest
+[INFO] Running org.apache.commons.math4.genetics.BinaryMutationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.genetics.BinaryMutationTest
+[INFO] Running org.apache.commons.math4.genetics.GeneticAlgorithmTestPermutations
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 s - in org.apache.commons.math4.genetics.GeneticAlgorithmTestPermutations
+[INFO] Running org.apache.commons.math4.genetics.RandomKeyMutationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.genetics.RandomKeyMutationTest
+[INFO] Running org.apache.commons.math4.genetics.CycleCrossoverTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.genetics.CycleCrossoverTest
+[INFO] Running org.apache.commons.math4.genetics.OrderedCrossoverTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.genetics.OrderedCrossoverTest
+[INFO] Running org.apache.commons.math4.genetics.FixedElapsedTimeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.013 s - in org.apache.commons.math4.genetics.FixedElapsedTimeTest
+[INFO] Running org.apache.commons.math4.genetics.ElitisticListPopulationTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.genetics.ElitisticListPopulationTest
+[INFO] Running org.apache.commons.math4.genetics.NPointCrossoverTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.commons.math4.genetics.NPointCrossoverTest
+[INFO] Running org.apache.commons.math4.genetics.TournamentSelectionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.genetics.TournamentSelectionTest
+[INFO] Running org.apache.commons.math4.genetics.RandomKeyTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.genetics.RandomKeyTest
+[INFO] Running org.apache.commons.math4.ml.clustering.DBSCANClustererTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.commons.math4.ml.clustering.DBSCANClustererTest
+[INFO] Running org.apache.commons.math4.ml.clustering.MultiKMeansPlusPlusClustererTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.commons.math4.ml.clustering.MultiKMeansPlusPlusClustererTest
+[INFO] Running org.apache.commons.math4.ml.clustering.FuzzyKMeansClustererTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.commons.math4.ml.clustering.FuzzyKMeansClustererTest
+[INFO] Running org.apache.commons.math4.ml.clustering.evaluation.SumOfClusterVariancesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.ml.clustering.evaluation.SumOfClusterVariancesTest
+[INFO] Running org.apache.commons.math4.ml.clustering.KMeansPlusPlusClustererTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.apache.commons.math4.ml.clustering.KMeansPlusPlusClustererTest
+[INFO] Running org.apache.commons.math4.ml.distance.EuclideanDistanceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.ml.distance.EuclideanDistanceTest
+[INFO] Running org.apache.commons.math4.ml.distance.EarthMoversDistanceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.ml.distance.EarthMoversDistanceTest
+[INFO] Running org.apache.commons.math4.ml.distance.ManhattanDistanceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.ml.distance.ManhattanDistanceTest
+[INFO] Running org.apache.commons.math4.ml.distance.CanberraDistanceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.ml.distance.CanberraDistanceTest
+[INFO] Running org.apache.commons.math4.ml.distance.ChebyshevDistanceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.ml.distance.ChebyshevDistanceTest
+[INFO] Running org.apache.commons.math4.ml.neuralnet.NetworkTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.apache.commons.math4.ml.neuralnet.NetworkTest
+[INFO] Running org.apache.commons.math4.ml.neuralnet.sofm.LearningFactorFunctionFactoryTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.ml.neuralnet.sofm.LearningFactorFunctionFactoryTest
+[INFO] Running org.apache.commons.math4.ml.neuralnet.sofm.KohonenUpdateActionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.commons.math4.ml.neuralnet.sofm.KohonenUpdateActionTest
+[INFO] Running org.apache.commons.math4.ml.neuralnet.sofm.NeighbourhoodSizeFunctionFactoryTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.ml.neuralnet.sofm.NeighbourhoodSizeFunctionFactoryTest
+[INFO] Running org.apache.commons.math4.ml.neuralnet.sofm.KohonenTrainingTaskTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.703 s - in org.apache.commons.math4.ml.neuralnet.sofm.KohonenTrainingTaskTest
+[INFO] Running org.apache.commons.math4.ml.neuralnet.sofm.util.QuasiSigmoidDecayFunctionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.ml.neuralnet.sofm.util.QuasiSigmoidDecayFunctionTest
+[INFO] Running org.apache.commons.math4.ml.neuralnet.sofm.util.ExponentialDecayFunctionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.ml.neuralnet.sofm.util.ExponentialDecayFunctionTest
+[INFO] Running org.apache.commons.math4.ml.neuralnet.twod.NeuronSquareMesh2DTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.commons.math4.ml.neuralnet.twod.NeuronSquareMesh2DTest
+[INFO] Running org.apache.commons.math4.ml.neuralnet.NeuronTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.ml.neuralnet.NeuronTest
+[INFO] Running org.apache.commons.math4.ml.neuralnet.MapUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.ml.neuralnet.MapUtilsTest
+[INFO] Running org.apache.commons.math4.ml.neuralnet.oned.NeuronStringTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.ml.neuralnet.oned.NeuronStringTest
+[INFO] Running org.apache.commons.math4.primes.PrimesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in org.apache.commons.math4.primes.PrimesTest
+[INFO] Running org.apache.commons.math4.exception.NumberIsTooLargeExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.exception.NumberIsTooLargeExceptionTest
+[INFO] Running org.apache.commons.math4.exception.NumberIsTooSmallExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.exception.NumberIsTooSmallExceptionTest
+[INFO] Running org.apache.commons.math4.exception.NotPositiveExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.exception.NotPositiveExceptionTest
+[INFO] Running org.apache.commons.math4.exception.OutOfRangeExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.exception.OutOfRangeExceptionTest
+[INFO] Running org.apache.commons.math4.exception.DimensionMismatchExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.exception.DimensionMismatchExceptionTest
+[INFO] Running org.apache.commons.math4.exception.NotStrictlyPositiveExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.exception.NotStrictlyPositiveExceptionTest
+[INFO] Running org.apache.commons.math4.exception.TooManyEvaluationsExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.exception.TooManyEvaluationsExceptionTest
+[INFO] Running org.apache.commons.math4.exception.MaxCountExceededExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.exception.MaxCountExceededExceptionTest
+[INFO] Running org.apache.commons.math4.exception.NonMonotonicSequenceExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.exception.NonMonotonicSequenceExceptionTest
+[INFO] Running org.apache.commons.math4.exception.util.LocalizedFormatsTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in org.apache.commons.math4.exception.util.LocalizedFormatsTest
+[INFO] Running org.apache.commons.math4.exception.util.ArgUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.exception.util.ArgUtilsTest
+[INFO] Running org.apache.commons.math4.exception.util.ExceptionContextTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.apache.commons.math4.exception.util.ExceptionContextTest
+[INFO] Running org.apache.commons.math4.optim.univariate.BrentOptimizerTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in org.apache.commons.math4.optim.univariate.BrentOptimizerTest
+[INFO] Running org.apache.commons.math4.optim.univariate.BracketFinderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.optim.univariate.BracketFinderTest
+[INFO] Running org.apache.commons.math4.optim.univariate.MultiStartUnivariateOptimizerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.optim.univariate.MultiStartUnivariateOptimizerTest
+[INFO] Running org.apache.commons.math4.optim.univariate.SimpleUnivariateValueCheckerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.optim.univariate.SimpleUnivariateValueCheckerTest
+[INFO] Running org.apache.commons.math4.optim.SimplePointCheckerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.optim.SimplePointCheckerTest
+[INFO] Running org.apache.commons.math4.optim.SimpleValueCheckerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.optim.SimpleValueCheckerTest
+[INFO] Running org.apache.commons.math4.optim.nonlinear.scalar.MultivariateFunctionMappingAdapterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.apache.commons.math4.optim.nonlinear.scalar.MultivariateFunctionMappingAdapterTest
+[INFO] Running org.apache.commons.math4.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.apache.commons.math4.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest
+[INFO] Running org.apache.commons.math4.optim.nonlinear.scalar.MultiStartMultivariateOptimizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.commons.math4.optim.nonlinear.scalar.MultiStartMultivariateOptimizerTest
+[INFO] Running org.apache.commons.math4.optim.nonlinear.scalar.noderiv.PowellOptimizerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.commons.math4.optim.nonlinear.scalar.noderiv.PowellOptimizerTest
+[INFO] Running org.apache.commons.math4.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.commons.math4.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest
+[INFO] Running org.apache.commons.math4.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.219 s - in org.apache.commons.math4.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest
+[INFO] Running org.apache.commons.math4.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.commons.math4.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest
+[INFO] Running org.apache.commons.math4.optim.nonlinear.scalar.noderiv.BOBYQAOptimizerTest
+[WARNING] Tests run: 19, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 16.688 s - in org.apache.commons.math4.optim.nonlinear.scalar.noderiv.BOBYQAOptimizerTest
+[INFO] Running org.apache.commons.math4.optim.nonlinear.scalar.MultivariateFunctionPenaltyAdapterTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.commons.math4.optim.nonlinear.scalar.MultivariateFunctionPenaltyAdapterTest
+[INFO] Running org.apache.commons.math4.optim.linear.SimplexSolverTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in org.apache.commons.math4.optim.linear.SimplexSolverTest
+[INFO] Running org.apache.commons.math4.optim.linear.SimplexTableauTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.optim.linear.SimplexTableauTest
+[INFO] Running org.apache.commons.math4.optim.SimpleVectorValueCheckerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.optim.SimpleVectorValueCheckerTest
+[INFO] Running org.apache.commons.math4.optim.PointVectorValuePairTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.optim.PointVectorValuePairTest
+[INFO] Running org.apache.commons.math4.optim.PointValuePairTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.optim.PointValuePairTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.EulerIntegratorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in org.apache.commons.math4.ode.nonstiff.EulerIntegratorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.MidpointStepInterpolatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in org.apache.commons.math4.ode.nonstiff.MidpointStepInterpolatorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.AdamsMoultonIntegratorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.apache.commons.math4.ode.nonstiff.AdamsMoultonIntegratorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.MidpointIntegratorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s - in org.apache.commons.math4.ode.nonstiff.MidpointIntegratorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.GraggBulirschStoerIntegratorTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 s - in org.apache.commons.math4.ode.nonstiff.GraggBulirschStoerIntegratorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.LutherIntegratorTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.apache.commons.math4.ode.nonstiff.LutherIntegratorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.LutherStepInterpolatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in org.apache.commons.math4.ode.nonstiff.LutherStepInterpolatorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.commons.math4.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.HighamHall54StepInterpolatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.apache.commons.math4.ode.nonstiff.HighamHall54StepInterpolatorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.GillStepInterpolatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.apache.commons.math4.ode.nonstiff.GillStepInterpolatorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.EulerStepInterpolatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.commons.math4.ode.nonstiff.EulerStepInterpolatorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.DormandPrince853StepInterpolatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.apache.commons.math4.ode.nonstiff.DormandPrince853StepInterpolatorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.DormandPrince54StepInterpolatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.apache.commons.math4.ode.nonstiff.DormandPrince54StepInterpolatorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.ThreeEighthesIntegratorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in org.apache.commons.math4.ode.nonstiff.ThreeEighthesIntegratorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.GillIntegratorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in org.apache.commons.math4.ode.nonstiff.GillIntegratorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.ClassicalRungeKuttaStepInterpolatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in org.apache.commons.math4.ode.nonstiff.ClassicalRungeKuttaStepInterpolatorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.DormandPrince54IntegratorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.apache.commons.math4.ode.nonstiff.DormandPrince54IntegratorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.DormandPrince853IntegratorTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.commons.math4.ode.nonstiff.DormandPrince853IntegratorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.HighamHall54IntegratorTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.apache.commons.math4.ode.nonstiff.HighamHall54IntegratorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.ThreeEighthesStepInterpolatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.apache.commons.math4.ode.nonstiff.ThreeEighthesStepInterpolatorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.AdamsBashforthIntegratorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.apache.commons.math4.ode.nonstiff.AdamsBashforthIntegratorTest
+[INFO] Running org.apache.commons.math4.ode.nonstiff.ClassicalRungeKuttaIntegratorTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in org.apache.commons.math4.ode.nonstiff.ClassicalRungeKuttaIntegratorTest
+[INFO] Running org.apache.commons.math4.ode.events.ReappearingEventTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.ode.events.ReappearingEventTest
+[INFO] Running org.apache.commons.math4.ode.events.OverlappingEventsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.commons.math4.ode.events.OverlappingEventsTest
+[INFO] Running org.apache.commons.math4.ode.events.EventFilterTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 s - in org.apache.commons.math4.ode.events.EventFilterTest
+[INFO] Running org.apache.commons.math4.ode.events.EventStateTest
+[ERROR] Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.026 s <<< FAILURE! - in org.apache.commons.math4.ode.events.EventStateTest
+[ERROR] testEventsCloserThanThreshold(org.apache.commons.math4.ode.events.EventStateTest)  Time elapsed: 0.012 s  <<< ERROR!
+org.apache.commons.math4.exception.NumberIsTooLargeException: endpoints do not specify an interval: [9.92, 9.918]
+	at org.apache.commons.math4.ode.events.EventStateTest.testEventsCloserThanThreshold(EventStateTest.java:239)
+
+[INFO] Running org.apache.commons.math4.ode.FirstOrderConverterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.commons.math4.ode.FirstOrderConverterTest
+[INFO] Running org.apache.commons.math4.ode.sampling.StepNormalizerOutputTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.commons.math4.ode.sampling.StepNormalizerOutputTest
+[INFO] Running org.apache.commons.math4.ode.sampling.StepNormalizerOutputOverlapTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.ode.sampling.StepNormalizerOutputOverlapTest
+[INFO] Running org.apache.commons.math4.ode.sampling.NordsieckStepInterpolatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.apache.commons.math4.ode.sampling.NordsieckStepInterpolatorTest
+[INFO] Running org.apache.commons.math4.ode.sampling.StepNormalizerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.ode.sampling.StepNormalizerTest
+[INFO] Running org.apache.commons.math4.ode.sampling.DummyStepInterpolatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.ode.sampling.DummyStepInterpolatorTest
+[INFO] Running org.apache.commons.math4.ode.JacobianMatricesTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.611 s - in org.apache.commons.math4.ode.JacobianMatricesTest
+[INFO] Running org.apache.commons.math4.ode.ContinuousOutputModelTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.commons.math4.ode.ContinuousOutputModelTest
+[INFO] Running org.apache.commons.math4.special.BesselJTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in org.apache.commons.math4.special.BesselJTest
+[INFO] Running org.apache.commons.math4.special.GammaTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.apache.commons.math4.special.GammaTest
+[INFO] Running org.apache.commons.math4.special.ErfTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.commons.math4.special.ErfTest
+[INFO] Running org.apache.commons.math4.special.BetaTest
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.commons.math4.special.BetaTest
+[INFO] Running org.apache.commons.math4.dfp.DfpDecTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.commons.math4.dfp.DfpDecTest
+[INFO] Running org.apache.commons.math4.dfp.DfpMathTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.commons.math4.dfp.DfpMathTest
+[INFO] Running org.apache.commons.math4.dfp.DfpTest
+[INFO] Tests run: 78, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.54 s - in org.apache.commons.math4.dfp.DfpTest
+[INFO] Running org.apache.commons.math4.dfp.BracketingNthOrderBrentSolverDFPTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 s - in org.apache.commons.math4.dfp.BracketingNthOrderBrentSolverDFPTest
+[INFO] Running org.apache.commons.math4.stat.CertifiedDataTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.apache.commons.math4.stat.CertifiedDataTest
+[INFO] Running org.apache.commons.math4.stat.FrequencyTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.apache.commons.math4.stat.FrequencyTest
+[INFO] Running org.apache.commons.math4.stat.interval.AgrestiCoullIntervalTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.commons.math4.stat.interval.AgrestiCoullIntervalTest
+[INFO] Running org.apache.commons.math4.stat.interval.NormalApproximationIntervalTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.stat.interval.NormalApproximationIntervalTest
+[INFO] Running org.apache.commons.math4.stat.interval.ClopperPearsonIntervalTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.stat.interval.ClopperPearsonIntervalTest
+[INFO] Running org.apache.commons.math4.stat.interval.WilsonScoreIntervalTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.stat.interval.WilsonScoreIntervalTest
+[INFO] Running org.apache.commons.math4.stat.interval.IntervalUtilsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.stat.interval.IntervalUtilsTest
+[INFO] Running org.apache.commons.math4.stat.correlation.SpearmansRankCorrelationTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.apache.commons.math4.stat.correlation.SpearmansRankCorrelationTest
+[INFO] Running org.apache.commons.math4.stat.correlation.StorelessCovarianceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.commons.math4.stat.correlation.StorelessCovarianceTest
+[INFO] Running org.apache.commons.math4.stat.correlation.CovarianceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.commons.math4.stat.correlation.CovarianceTest
+[INFO] Running org.apache.commons.math4.stat.correlation.PearsonsCorrelationTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.commons.math4.stat.correlation.PearsonsCorrelationTest
+[INFO] Running org.apache.commons.math4.stat.correlation.KendallsCorrelationTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 s - in org.apache.commons.math4.stat.correlation.KendallsCorrelationTest
+[INFO] Running org.apache.commons.math4.stat.inference.BinomialTestTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.commons.math4.stat.inference.BinomialTestTest
+[INFO] Running org.apache.commons.math4.stat.inference.OneWayAnovaTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.stat.inference.OneWayAnovaTest
+[INFO] Running org.apache.commons.math4.stat.inference.ChiSquareTestTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.stat.inference.ChiSquareTestTest
+[INFO] Running org.apache.commons.math4.stat.inference.WilcoxonSignedRankTestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.commons.math4.stat.inference.WilcoxonSignedRankTestTest
+[INFO] Running org.apache.commons.math4.stat.inference.GTestTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.commons.math4.stat.inference.GTestTest
+[INFO] Running org.apache.commons.math4.stat.inference.TTestTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.commons.math4.stat.inference.TTestTest
+[INFO] Running org.apache.commons.math4.stat.inference.TestUtilsTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.424 s - in org.apache.commons.math4.stat.inference.TestUtilsTest
+[INFO] Running org.apache.commons.math4.stat.inference.MannWhitneyUTestTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in org.apache.commons.math4.stat.inference.MannWhitneyUTestTest
+[INFO] Running org.apache.commons.math4.stat.inference.KolmogorovSmirnovTestTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.804 s - in org.apache.commons.math4.stat.inference.KolmogorovSmirnovTestTest
+[INFO] Running org.apache.commons.math4.stat.data.LotteryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.stat.data.LotteryTest
+[INFO] Running org.apache.commons.math4.stat.data.LewTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.stat.data.LewTest
+[INFO] Running org.apache.commons.math4.stat.regression.SimpleRegressionTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.stat.regression.SimpleRegressionTest
+[INFO] Running org.apache.commons.math4.stat.regression.OLSMultipleLinearRegressionTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.commons.math4.stat.regression.OLSMultipleLinearRegressionTest
+[INFO] Running org.apache.commons.math4.stat.regression.MillerUpdatingRegressionTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in org.apache.commons.math4.stat.regression.MillerUpdatingRegressionTest
+[INFO] Running org.apache.commons.math4.stat.regression.GLSMultipleLinearRegressionTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.99 s - in org.apache.commons.math4.stat.regression.GLSMultipleLinearRegressionTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.SecondMomentTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.stat.descriptive.moment.SecondMomentTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.SkewnessTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.commons.math4.stat.descriptive.moment.SkewnessTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.StandardDeviationTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.commons.math4.stat.descriptive.moment.StandardDeviationTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.VectorialMeanTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.stat.descriptive.moment.VectorialMeanTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.FirstMomentTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.stat.descriptive.moment.FirstMomentTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.VectorialCovarianceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.stat.descriptive.moment.VectorialCovarianceTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.FourthMomentTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.stat.descriptive.moment.FourthMomentTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.VarianceTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.stat.descriptive.moment.VarianceTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.InteractionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.stat.descriptive.moment.InteractionTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.MeanTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.stat.descriptive.moment.MeanTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.SemiVarianceTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.stat.descriptive.moment.SemiVarianceTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.ThirdMomentTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.stat.descriptive.moment.ThirdMomentTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.GeometricMeanTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.stat.descriptive.moment.GeometricMeanTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.moment.KurtosisTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.stat.descriptive.moment.KurtosisTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.SummaryStatisticsTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.commons.math4.stat.descriptive.SummaryStatisticsTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.summary.SumTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.stat.descriptive.summary.SumTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.summary.ProductTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.stat.descriptive.summary.ProductTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.summary.SumLogTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.stat.descriptive.summary.SumLogTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.summary.SumSqTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.stat.descriptive.summary.SumSqTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.MixedListUnivariateImplTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.commons.math4.stat.descriptive.MixedListUnivariateImplTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.StatisticalSummaryValuesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.stat.descriptive.StatisticalSummaryValuesTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.ListUnivariateImplTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.stat.descriptive.ListUnivariateImplTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.SynchronizedMultivariateSummaryStatisticsTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.commons.math4.stat.descriptive.SynchronizedMultivariateSummaryStatisticsTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.DescriptiveStatisticsTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.stat.descriptive.DescriptiveStatisticsTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.MultivariateSummaryStatisticsTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.stat.descriptive.MultivariateSummaryStatisticsTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.SynchronizedSummaryStatisticsTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.stat.descriptive.SynchronizedSummaryStatisticsTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.SynchronizedDescriptiveStatisticsTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.stat.descriptive.SynchronizedDescriptiveStatisticsTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.rank.PercentileTest
+[INFO] Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.apache.commons.math4.stat.descriptive.rank.PercentileTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.rank.MedianTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.stat.descriptive.rank.MedianTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.rank.PSquarePercentileTest
+[INFO] Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.987 s - in org.apache.commons.math4.stat.descriptive.rank.PSquarePercentileTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.rank.MinTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.stat.descriptive.rank.MinTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.rank.MaxTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.stat.descriptive.rank.MaxTest
+[INFO] Running org.apache.commons.math4.stat.descriptive.AggregateSummaryStatisticsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.commons.math4.stat.descriptive.AggregateSummaryStatisticsTest
+[INFO] Running org.apache.commons.math4.stat.ranking.NaturalRankingTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.stat.ranking.NaturalRankingTest
+[INFO] Running org.apache.commons.math4.stat.StatUtilsTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.commons.math4.stat.StatUtilsTest
+[INFO] Running org.apache.commons.math4.distribution.UniformRealDistributionTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.commons.math4.distribution.UniformRealDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.EnumeratedIntegerDistributionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 s - in org.apache.commons.math4.distribution.EnumeratedIntegerDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.ChiSquaredDistributionTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in org.apache.commons.math4.distribution.ChiSquaredDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.AbstractRealDistributionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 s - in org.apache.commons.math4.distribution.AbstractRealDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.MultivariateNormalMixtureModelDistributionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.commons.math4.distribution.MultivariateNormalMixtureModelDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.LogisticsDistributionTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.commons.math4.distribution.LogisticsDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.LogNormalDistributionTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in org.apache.commons.math4.distribution.LogNormalDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.ParetoDistributionTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.apache.commons.math4.distribution.ParetoDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.FDistributionTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.apache.commons.math4.distribution.FDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.TriangularDistributionTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.apache.commons.math4.distribution.TriangularDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.NormalDistributionTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.distribution.NormalDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.PoissonDistributionTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.commons.math4.distribution.PoissonDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.CauchyDistributionTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.commons.math4.distribution.CauchyDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.PascalDistributionTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.commons.math4.distribution.PascalDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.TDistributionTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.apache.commons.math4.distribution.TDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.MultivariateNormalDistributionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.316 s - in org.apache.commons.math4.distribution.MultivariateNormalDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.ConstantRealDistributionTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.distribution.ConstantRealDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.GumbelDistributionTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.distribution.GumbelDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.HypergeometricDistributionTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.apache.commons.math4.distribution.HypergeometricDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.LaplaceDistributionTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in org.apache.commons.math4.distribution.LaplaceDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.ExponentialDistributionTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.commons.math4.distribution.ExponentialDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.fitting.MultivariateNormalMixtureExpectationMaximizationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in org.apache.commons.math4.distribution.fitting.MultivariateNormalMixtureExpectationMaximizationTest
+[INFO] Running org.apache.commons.math4.distribution.BetaDistributionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 s - in org.apache.commons.math4.distribution.BetaDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.NakagamiDistributionTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.commons.math4.distribution.NakagamiDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.BinomialDistributionTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 s - in org.apache.commons.math4.distribution.BinomialDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.GeometricDistributionTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.commons.math4.distribution.GeometricDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.WeibullDistributionTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.commons.math4.distribution.WeibullDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.ZipfDistributionTest
+[WARNING] Tests run: 17, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.313 s - in org.apache.commons.math4.distribution.ZipfDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.AbstractIntegerDistributionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.distribution.AbstractIntegerDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.UniformIntegerDistributionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.distribution.UniformIntegerDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.GammaDistributionTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.141 s - in org.apache.commons.math4.distribution.GammaDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.EnumeratedRealDistributionTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 s - in org.apache.commons.math4.distribution.EnumeratedRealDistributionTest
+[INFO] Running org.apache.commons.math4.distribution.LevyDistributionTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.distribution.LevyDistributionTest
+[INFO] Running org.apache.commons.math4.transform.FastHadamardTransformerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.transform.FastHadamardTransformerTest
+[INFO] Running org.apache.commons.math4.transform.FastCosineTransformerTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.apache.commons.math4.transform.FastCosineTransformerTest
+[INFO] Running org.apache.commons.math4.transform.FastFourierTransformerTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in org.apache.commons.math4.transform.FastFourierTransformerTest
+[INFO] Running org.apache.commons.math4.transform.FastSineTransformerTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.commons.math4.transform.FastSineTransformerTest
+[INFO] Running org.apache.commons.math4.filter.KalmanFilterTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.commons.math4.filter.KalmanFilterTest
+[INFO] Running org.apache.commons.math4.fitting.WeightedObservedPointsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.fitting.WeightedObservedPointsTest
+[INFO] Running org.apache.commons.math4.fitting.HarmonicCurveFitterTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in org.apache.commons.math4.fitting.HarmonicCurveFitterTest
+[INFO] Running org.apache.commons.math4.fitting.PolynomialCurveFitterTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.43 s - in org.apache.commons.math4.fitting.PolynomialCurveFitterTest
+[INFO] Running org.apache.commons.math4.fitting.GaussianCurveFitterTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.apache.commons.math4.fitting.GaussianCurveFitterTest
+[INFO] Running org.apache.commons.math4.fitting.leastsquares.EvaluationTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.apache.commons.math4.fitting.leastsquares.EvaluationTest
+[INFO] Running org.apache.commons.math4.fitting.leastsquares.MinpackTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 s - in org.apache.commons.math4.fitting.leastsquares.MinpackTest
+[INFO] Running org.apache.commons.math4.fitting.leastsquares.GaussNewtonOptimizerWithLUTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in org.apache.commons.math4.fitting.leastsquares.GaussNewtonOptimizerWithLUTest
+[INFO] Running org.apache.commons.math4.fitting.leastsquares.GaussNewtonOptimizerWithQRTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.commons.math4.fitting.leastsquares.GaussNewtonOptimizerWithQRTest
+[INFO] Running org.apache.commons.math4.fitting.leastsquares.GaussNewtonOptimizerWithCholeskyTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.apache.commons.math4.fitting.leastsquares.GaussNewtonOptimizerWithCholeskyTest
+[INFO] Running org.apache.commons.math4.fitting.leastsquares.GaussNewtonOptimizerWithSVDTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 s - in org.apache.commons.math4.fitting.leastsquares.GaussNewtonOptimizerWithSVDTest
+[INFO] Running org.apache.commons.math4.fitting.leastsquares.EvaluationRmsCheckerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.fitting.leastsquares.EvaluationRmsCheckerTest
+[INFO] Running org.apache.commons.math4.fitting.leastsquares.LevenbergMarquardtOptimizerTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 s - in org.apache.commons.math4.fitting.leastsquares.LevenbergMarquardtOptimizerTest
+[INFO] Running org.apache.commons.math4.fitting.SimpleCurveFitterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.fitting.SimpleCurveFitterTest
+[INFO] Running org.apache.commons.math4.RetryRunnerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.RetryRunnerTest
+[INFO] Running org.apache.commons.math4.linear.FieldLUDecompositionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.apache.commons.math4.linear.FieldLUDecompositionTest
+[INFO] Running org.apache.commons.math4.linear.HessenbergTransformerTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in org.apache.commons.math4.linear.HessenbergTransformerTest
+[INFO] Running org.apache.commons.math4.linear.OpenMapRealMatrixTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.linear.OpenMapRealMatrixTest
+[INFO] Running org.apache.commons.math4.linear.SparseFieldVectorTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.commons.math4.linear.SparseFieldVectorTest
+[INFO] Running org.apache.commons.math4.linear.SingularValueDecompositionTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 s - in org.apache.commons.math4.linear.SingularValueDecompositionTest
+[INFO] Running org.apache.commons.math4.linear.EigenSolverTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.commons.math4.linear.EigenSolverTest
+[INFO] Running org.apache.commons.math4.linear.RealMatrixFormatTest
+[WARNING] Tests run: 29, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.017 s - in org.apache.commons.math4.linear.RealMatrixFormatTest
+[INFO] Running org.apache.commons.math4.linear.ArrayFieldVectorTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.commons.math4.linear.ArrayFieldVectorTest
+[INFO] Running org.apache.commons.math4.linear.SparseRealVectorTest
+[INFO] Tests run: 106, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 s - in org.apache.commons.math4.linear.SparseRealVectorTest
+[INFO] Running org.apache.commons.math4.linear.MatrixDimensionMismatchExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.linear.MatrixDimensionMismatchExceptionTest
+[INFO] Running org.apache.commons.math4.linear.SingularValueSolverTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.linear.SingularValueSolverTest
+[INFO] Running org.apache.commons.math4.linear.QRSolverTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.apache.commons.math4.linear.QRSolverTest
+[INFO] Running org.apache.commons.math4.linear.CholeskySolverTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.linear.CholeskySolverTest
+[INFO] Running org.apache.commons.math4.linear.ArrayRealVectorTest
+[INFO] Tests run: 108, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 s - in org.apache.commons.math4.linear.ArrayRealVectorTest
+[INFO] Running org.apache.commons.math4.linear.BlockRealMatrixTest
+[INFO] Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 s - in org.apache.commons.math4.linear.BlockRealMatrixTest
+[INFO] Running org.apache.commons.math4.linear.BiDiagonalTransformerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.commons.math4.linear.BiDiagonalTransformerTest
+[INFO] Running org.apache.commons.math4.linear.SparseRealMatrixTest
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.commons.math4.linear.SparseRealMatrixTest
+[INFO] Running org.apache.commons.math4.linear.RRQRSolverTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.apache.commons.math4.linear.RRQRSolverTest
+[INFO] Running org.apache.commons.math4.linear.SchurTransformerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in org.apache.commons.math4.linear.SchurTransformerTest
+[INFO] Running org.apache.commons.math4.linear.RRQRDecompositionTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in org.apache.commons.math4.linear.RRQRDecompositionTest
+[INFO] Running org.apache.commons.math4.linear.Array2DRowRealMatrixTest
+[INFO] Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.commons.math4.linear.Array2DRowRealMatrixTest
+[INFO] Running org.apache.commons.math4.linear.FieldMatrixImplTest
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in org.apache.commons.math4.linear.FieldMatrixImplTest
+[INFO] Running org.apache.commons.math4.linear.DiagonalMatrixTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.linear.DiagonalMatrixTest
+[INFO] Running org.apache.commons.math4.linear.QRDecompositionTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.apache.commons.math4.linear.QRDecompositionTest
+[INFO] Running org.apache.commons.math4.linear.CholeskyDecompositionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.linear.CholeskyDecompositionTest
+[INFO] Running org.apache.commons.math4.linear.SymmLQTest
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.238 s - in org.apache.commons.math4.linear.SymmLQTest
+[INFO] Running org.apache.commons.math4.linear.RealVectorFormatTest
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.commons.math4.linear.RealVectorFormatTest
+[INFO] Running org.apache.commons.math4.linear.MatrixUtilsTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.commons.math4.linear.MatrixUtilsTest
+[INFO] Running org.apache.commons.math4.linear.LUDecompositionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.linear.LUDecompositionTest
+[INFO] Running org.apache.commons.math4.linear.ConjugateGradientTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 s - in org.apache.commons.math4.linear.ConjugateGradientTest
+[INFO] Running org.apache.commons.math4.linear.LUSolverTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.linear.LUSolverTest
+[INFO] Running org.apache.commons.math4.linear.RealVectorTest
+[WARNING] Tests run: 105, Failures: 0, Errors: 0, Skipped: 24, Time elapsed: 0.096 s - in org.apache.commons.math4.linear.RealVectorTest
+[INFO] Running org.apache.commons.math4.linear.FrenchRealVectorFormatTest
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.commons.math4.linear.FrenchRealVectorFormatTest
+[INFO] Running org.apache.commons.math4.linear.RectangularCholeskyDecompositionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.linear.RectangularCholeskyDecompositionTest
+[INFO] Running org.apache.commons.math4.linear.FieldLUSolverTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.linear.FieldLUSolverTest
+[INFO] Running org.apache.commons.math4.linear.TriDiagonalTransformerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.linear.TriDiagonalTransformerTest
+[INFO] Running org.apache.commons.math4.linear.EigenDecompositionTest
+[WARNING] Tests run: 30, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.145 s - in org.apache.commons.math4.linear.EigenDecompositionTest
+[INFO] Running org.apache.commons.math4.linear.UnmodifiableArrayRealVectorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.apache.commons.math4.linear.UnmodifiableArrayRealVectorTest
+[INFO] Running org.apache.commons.math4.linear.UnmodifiableOpenMapRealVectorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 s - in org.apache.commons.math4.linear.UnmodifiableOpenMapRealVectorTest
+[INFO] Running org.apache.commons.math4.linear.SparseFieldMatrixTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.commons.math4.linear.SparseFieldMatrixTest
+[INFO] Running org.apache.commons.math4.linear.BlockFieldMatrixTest
+[INFO] Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 s - in org.apache.commons.math4.linear.BlockFieldMatrixTest
+[INFO] Running org.apache.commons.math4.fraction.BigFractionFormatTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.commons.math4.fraction.BigFractionFormatTest
+[INFO] Running org.apache.commons.math4.fraction.FractionFieldTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.fraction.FractionFieldTest
+[INFO] Running org.apache.commons.math4.fraction.FractionFormatTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.fraction.FractionFormatTest
+[INFO] Running org.apache.commons.math4.fraction.BigFractionFieldTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.fraction.BigFractionFieldTest
+[INFO] Running org.apache.commons.math4.fraction.FractionTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.fraction.FractionTest
+[INFO] Running org.apache.commons.math4.fraction.BigFractionTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.commons.math4.fraction.BigFractionTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.twod.Vector2DFormatTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.commons.math4.geometry.euclidean.twod.Vector2DFormatTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.twod.Vector2DTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.geometry.euclidean.twod.Vector2DTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.twod.FrenchVector2DFormatTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.commons.math4.geometry.euclidean.twod.FrenchVector2DFormatTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.twod.SegmentTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.geometry.euclidean.twod.SegmentTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.twod.Euclidean2DTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.commons.math4.geometry.euclidean.twod.Euclidean2DTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.twod.LineTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.commons.math4.geometry.euclidean.twod.LineTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.twod.SubLineTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in org.apache.commons.math4.geometry.euclidean.twod.SubLineTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.twod.DiskGeneratorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 s - in org.apache.commons.math4.geometry.euclidean.twod.DiskGeneratorTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.twod.PolygonsSetTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 s - in org.apache.commons.math4.geometry.euclidean.twod.PolygonsSetTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.twod.hull.MonotoneChainTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in org.apache.commons.math4.geometry.euclidean.twod.hull.MonotoneChainTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.twod.hull.AklToussaintHeuristicTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in org.apache.commons.math4.geometry.euclidean.twod.hull.AklToussaintHeuristicTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.oned.IntervalsSetTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.geometry.euclidean.oned.IntervalsSetTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.oned.FrenchVector1DFormatTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.apache.commons.math4.geometry.euclidean.oned.FrenchVector1DFormatTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.oned.IntervalTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.geometry.euclidean.oned.IntervalTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.oned.Vector1DFormatTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.geometry.euclidean.oned.Vector1DFormatTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.oned.Euclidean1DTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.geometry.euclidean.oned.Euclidean1DTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.oned.Vector1DTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.commons.math4.geometry.euclidean.oned.Vector1DTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.Vector3DTest
+[INFO] Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.apache.commons.math4.geometry.euclidean.threed.Vector3DTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.Euclidean3DTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.geometry.euclidean.threed.Euclidean3DTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.FieldRotationDSTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.28 s - in org.apache.commons.math4.geometry.euclidean.threed.FieldRotationDSTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.LineTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.geometry.euclidean.threed.LineTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.FrenchVector3DFormatTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.geometry.euclidean.threed.FrenchVector3DFormatTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.SubLineTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.commons.math4.geometry.euclidean.threed.SubLineTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.RotationTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in org.apache.commons.math4.geometry.euclidean.threed.RotationTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.SphereGeneratorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 s - in org.apache.commons.math4.geometry.euclidean.threed.SphereGeneratorTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.FieldRotationDfpTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.166 s - in org.apache.commons.math4.geometry.euclidean.threed.FieldRotationDfpTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.PolyhedronsSetTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in org.apache.commons.math4.geometry.euclidean.threed.PolyhedronsSetTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.PlaneTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.geometry.euclidean.threed.PlaneTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.Vector3DFormatTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.geometry.euclidean.threed.Vector3DFormatTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.FieldVector3DTest
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s - in org.apache.commons.math4.geometry.euclidean.threed.FieldVector3DTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.RotationOrderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.geometry.euclidean.threed.RotationOrderTest
+[INFO] Running org.apache.commons.math4.geometry.euclidean.threed.SphericalCoordinatesTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.485 s - in org.apache.commons.math4.geometry.euclidean.threed.SphericalCoordinatesTest
+[INFO] Running org.apache.commons.math4.geometry.spherical.twod.CircleTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.apache.commons.math4.geometry.spherical.twod.CircleTest
+[INFO] Running org.apache.commons.math4.geometry.spherical.twod.S2PointTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.geometry.spherical.twod.S2PointTest
+[INFO] Running org.apache.commons.math4.geometry.spherical.twod.SubCircleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.commons.math4.geometry.spherical.twod.SubCircleTest
+[INFO] Running org.apache.commons.math4.geometry.spherical.twod.SphericalPolygonsSetTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in org.apache.commons.math4.geometry.spherical.twod.SphericalPolygonsSetTest
+[INFO] Running org.apache.commons.math4.geometry.spherical.oned.S1PointTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.geometry.spherical.oned.S1PointTest
+[INFO] Running org.apache.commons.math4.geometry.spherical.oned.LimitAngleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.geometry.spherical.oned.LimitAngleTest
+[INFO] Running org.apache.commons.math4.geometry.spherical.oned.Sphere1Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.geometry.spherical.oned.Sphere1Test
+[INFO] Running org.apache.commons.math4.geometry.spherical.oned.ArcsSetTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.commons.math4.geometry.spherical.oned.ArcsSetTest
+[INFO] Running org.apache.commons.math4.geometry.spherical.oned.ArcTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.geometry.spherical.oned.ArcTest
+[INFO] Running org.apache.commons.math4.geometry.enclosing.WelzlEncloser3DTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.45 s - in org.apache.commons.math4.geometry.enclosing.WelzlEncloser3DTest
+[INFO] Running org.apache.commons.math4.geometry.enclosing.WelzlEncloser2DTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.333 s - in org.apache.commons.math4.geometry.enclosing.WelzlEncloser2DTest
+[INFO] Running org.apache.commons.math4.random.ISAACTest
+[INFO] Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.527 s - in org.apache.commons.math4.random.ISAACTest
+[INFO] Running org.apache.commons.math4.random.Well44497bTest
+[INFO] Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.79 s - in org.apache.commons.math4.random.Well44497bTest
+[INFO] Running org.apache.commons.math4.random.Well1024aTest
+[INFO] Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.271 s - in org.apache.commons.math4.random.Well1024aTest
+[INFO] Running org.apache.commons.math4.random.UniformRandomGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.commons.math4.random.UniformRandomGeneratorTest
+[INFO] Running org.apache.commons.math4.random.Well512aTest
+[INFO] Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.327 s - in org.apache.commons.math4.random.Well512aTest
+[INFO] Running org.apache.commons.math4.random.Well19937aTest
+[INFO] Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.231 s - in org.apache.commons.math4.random.Well19937aTest
+[INFO] Running org.apache.commons.math4.random.BitsStreamGeneratorTest
+[INFO] Tests run: 61, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.133 s - in org.apache.commons.math4.random.BitsStreamGeneratorTest
+[INFO] Running org.apache.commons.math4.random.GaussianRandomGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.random.GaussianRandomGeneratorTest
+[INFO] Running org.apache.commons.math4.random.StableRandomGeneratorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.apache.commons.math4.random.StableRandomGeneratorTest
+[INFO] Running org.apache.commons.math4.random.ValueServerTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 s - in org.apache.commons.math4.random.ValueServerTest
+[INFO] Running org.apache.commons.math4.random.SobolSequenceGeneratorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.apache.commons.math4.random.SobolSequenceGeneratorTest
+[INFO] Running org.apache.commons.math4.random.SynchronizedRandomGeneratorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.975 s - in org.apache.commons.math4.random.SynchronizedRandomGeneratorTest
+[INFO] Running org.apache.commons.math4.random.RandomAdaptorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.random.RandomAdaptorTest
+[INFO] Running org.apache.commons.math4.random.UnitSphereRandomVectorGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.408 s - in org.apache.commons.math4.random.UnitSphereRandomVectorGeneratorTest
+[INFO] Running org.apache.commons.math4.random.CorrelatedRandomVectorGeneratorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.apache.commons.math4.random.CorrelatedRandomVectorGeneratorTest
+[INFO] Running org.apache.commons.math4.random.RandomDataGeneratorTest
+[INFO] Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.525 s - in org.apache.commons.math4.random.RandomDataGeneratorTest
+[INFO] Running org.apache.commons.math4.random.RandomGeneratorFactoryTest
+[INFO] Tests run: 61, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.018 s - in org.apache.commons.math4.random.RandomGeneratorFactoryTest
+[INFO] Running org.apache.commons.math4.random.UncorrelatedRandomVectorGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.random.UncorrelatedRandomVectorGeneratorTest
+[INFO] Running org.apache.commons.math4.random.Well19937cTest
+[INFO] Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.289 s - in org.apache.commons.math4.random.Well19937cTest
+[INFO] Running org.apache.commons.math4.random.HaltonSequenceGeneratorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.random.HaltonSequenceGeneratorTest
+[INFO] Running org.apache.commons.math4.random.AbstractRandomGeneratorTest
+[INFO] Tests run: 61, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.285 s - in org.apache.commons.math4.random.AbstractRandomGeneratorTest
+[INFO] Running org.apache.commons.math4.random.MersenneTwisterTest
+[INFO] Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.301 s - in org.apache.commons.math4.random.MersenneTwisterTest
+[INFO] Running org.apache.commons.math4.random.EmpiricalDistributionTest
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.761 s - in org.apache.commons.math4.random.EmpiricalDistributionTest
+[INFO] Running org.apache.commons.math4.random.Well44497aTest
+[INFO] Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.188 s - in org.apache.commons.math4.random.Well44497aTest
+[INFO] Running org.apache.commons.math4.util.TransformerMapTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.commons.math4.util.TransformerMapTest
+[INFO] Running org.apache.commons.math4.util.MathUtilsTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.util.MathUtilsTest
+[INFO] Running org.apache.commons.math4.util.FastMathStrictComparisonTest
+[INFO] Tests run: 66, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.apache.commons.math4.util.FastMathStrictComparisonTest
+[INFO] Running org.apache.commons.math4.util.PairTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.util.PairTest
+[INFO] Running org.apache.commons.math4.util.BigRealTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.commons.math4.util.BigRealTest
+[INFO] Running org.apache.commons.math4.util.DefaultTransformerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.commons.math4.util.DefaultTransformerTest
+[INFO] Running org.apache.commons.math4.util.CombinationsTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.commons.math4.util.CombinationsTest
+[INFO] Running org.apache.commons.math4.util.OpenIntToDoubleHashMapTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in org.apache.commons.math4.util.OpenIntToDoubleHashMapTest
+[INFO] Running org.apache.commons.math4.util.BigRealFieldTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.commons.math4.util.BigRealFieldTest
+[INFO] Running org.apache.commons.math4.util.ArithmeticUtilsTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.util.ArithmeticUtilsTest
+[INFO] Running org.apache.commons.math4.util.Decimal64Test
+[INFO] Tests run: 63, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in org.apache.commons.math4.util.Decimal64Test
+[INFO] Running org.apache.commons.math4.util.FastMathTest
+[WARNING] Tests run: 67, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 9.25 s - in org.apache.commons.math4.util.FastMathTest
+[INFO] Running org.apache.commons.math4.util.CombinatoricsUtilsTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 s - in org.apache.commons.math4.util.CombinatoricsUtilsTest
+[INFO] Running org.apache.commons.math4.util.ResizableDoubleArrayTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.commons.math4.util.ResizableDoubleArrayTest
+[INFO] Running org.apache.commons.math4.util.PrecisionTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.util.PrecisionTest
+[INFO] Running org.apache.commons.math4.util.MultidimensionalCounterTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.commons.math4.util.MultidimensionalCounterTest
+[INFO] Running org.apache.commons.math4.util.OpenIntToFieldTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in org.apache.commons.math4.util.OpenIntToFieldTest
+[INFO] Running org.apache.commons.math4.util.IncrementorTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.commons.math4.util.IncrementorTest
+[INFO] Running org.apache.commons.math4.util.MathArraysTest
+[INFO] Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.commons.math4.util.MathArraysTest
+[INFO] Running org.apache.commons.math4.util.ContinuedFractionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.apache.commons.math4.util.ContinuedFractionTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   EventStateTest.testEventsCloserThanThreshold:239 » NumberIsTooLarge endpoints ...
+[INFO] 
+[ERROR] Tests run: 5833, Failures: 0, Errors: 1, Skipped: 31
+[INFO] 
+[ERROR] There are test failures.
+
+Please refer to /home/ubuntu/projects/commons-math/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[INFO] 
+[INFO] --- com.gzoltar.maven:1.7.1-SNAPSHOT:fl-report (post-unit-test) @ commons-math4 ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:57 min
+[INFO] Finished at: 2018-08-24T15:47:42Z
+[INFO] Final Memory: 34M/544M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.gzoltar:com.gzoltar.maven:1.7.1-SNAPSHOT:fl-report (post-unit-test) on project commons-math4: An error has occurred in GZoltar report generation.: java.lang.RuntimeException: ProbeGroup 'b2140df7583d080b573c2b424a5470c8' | 'org.apache.commons.math4.complex.Complex' has not been added to the spectrum instance! -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
